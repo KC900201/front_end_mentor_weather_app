@@ -52,7 +52,12 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org) - Static-typing coding language builds on JavaScript
+- [Vite.js](https://vite.dev/) - Frontend framework and build tool
+- [TanStack Query]() - Data fetching
+- [Zustand]() - State management library
+- [TailwindCSS]() - Inline styling library
+- [Shadncn UI]() - Inline UI component library
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
@@ -90,9 +95,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [KC NG](https://kcng.netlify.app)
+- Frontend Mentor - [@KC900201](https://www.frontendmentor.io/profile/KC900201)
+- Instagram - [kclovint](https://www.instagram.com/kclovinit/)
 
 ## Acknowledgments
 
