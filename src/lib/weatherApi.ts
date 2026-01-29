@@ -2,6 +2,39 @@ import { fetchWeatherApi } from "openmeteo"
 
 // demonstration on how to use openmeteo api - https://open-meteo.com/en/docs?latitude=3.1412&longitude=101.6865
 
+export interface GeocodingResult {
+  id: number
+  name: string
+  latitude: number
+  longitude: number
+  country: string
+  country_code: string
+  admin1?: string
+}
+
+export interface WeatherData {
+  current: {
+    temperature_2m: number
+    apparent_temperature: number
+    relative_humidiy_2m: number
+    wind_speed_10m: number
+    precipitation: number
+    weather_code: number
+    is_day: number
+  }
+  hourly: {
+    time: string[]
+    temperature_2m: number[]
+    weather_code: number[]
+  }
+  daily: {
+    time: string[]
+    temperature_2m_max: number[]
+    temperature_2m_min: number[]
+    weather_code: number[]
+  }
+}
+
 const params = {
   latitude: 3.1412,
   longitude: 101.6865,
