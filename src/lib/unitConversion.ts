@@ -4,7 +4,7 @@ export function celsiusToFahrenheit(celsius: number) {
 }
 
 export function formatTemperature(celsius: number, unit: 'celsius' | 'fahrenheit') {
-  return unit === 'fahrenheit' ? `${celsiusToFahrenheit(celsius)}` : `${Math.round(celsius)}`
+  return unit === 'fahrenheit' ? `${celsiusToFahrenheit(celsius)}°` : `${Math.round(celsius)}°`
 }
 
 export function kmhToMph(kmh: number) {

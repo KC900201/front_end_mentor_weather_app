@@ -1,8 +1,10 @@
+import { lazy } from "react"
+
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-import HomePage from "@/components/pages/HomePage"
-import NotFound from "@/components/pages/NotFound"
+const HomePage = lazy(() => import("@/components/pages/HomePage"))
+const NotFound = lazy(() => import("@/components/pages/NotFound"))
 
 function App() {
   const queryClient = new QueryClient()

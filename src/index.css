@@ -30,6 +30,42 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  /* Container configuration */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+  /* Font families */
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Bricolage Grotesque", "DM Sans", sans-serif;
+
+  /* Custom font */
+  --text-temperature: 5rem;
+  --text-temperature--line-height: 1;
+  --text-temperature-mobile: 4rem;
+  --text-temperature--line-height: 1;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
 :root {
   font-family:
     "Bricolage Grotesque", "DM Sans", system-ui, Avenir, Helvetica, Arial,
@@ -190,11 +226,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family:
-      "DM Sans",
-      -apple-system,
-      BlinkMacSystemFont,
-      sans-serif;
+    font-family: var(--font-sans);
   }
 
   h1,
@@ -203,7 +235,30 @@
   h4,
   h5,
   h6 {
-    font-family: "Bricolage Grotesque", "DM Sans", sans-serif;
+    font-family: var(--font-display);
+  }
+
+  .container {
+    @apply mx-auto px-4;
+    max-width: 100%;
+  }
+
+  @media (width >= 375px) {
+    .container {
+      max-width: 375px;
+    }
+  }
+
+  @media (width >= 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }
+
+  @media (width >= 1024px) {
+    .container {
+      max-width: 1024px;
+    }
   }
 }
 
