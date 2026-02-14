@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Bricolage Grotesque";
-  src: url("/src/assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf")
+  src: url("./assets/fonts/Bricolage_Grotesque/static/BricolageGrotesque-Bold.ttf")
     format("truetype");
   font-weight: 700;
   font-style: normal;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/src/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+  src: url("./assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
     format("truetype-variations");
   font-weight: 300 500 600 700;
   font-style: normal;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/src/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+  src: url("./assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
     format("truetype-variations");
   font-weight: 600;
   font-style: italic;
