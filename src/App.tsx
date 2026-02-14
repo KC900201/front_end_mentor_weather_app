@@ -6,6 +6,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 const HomePage = lazy(() => import("@/components/pages/HomePage"))
 const NotFound = lazy(() => import("@/components/pages/NotFound"))
 
+/**
+ * To-do:
+ * [ ] Refine UI based on example
+ * [ ] Include test scripts
+ *
+ * @returns
+ */
+
 function App() {
   const queryClient = new QueryClient()
 
