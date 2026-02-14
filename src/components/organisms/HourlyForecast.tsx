@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, time } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
 
 import { WeatherIcon } from "@/components/atoms"

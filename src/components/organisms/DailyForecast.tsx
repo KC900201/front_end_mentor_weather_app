@@ -2,11 +2,7 @@ import { motion } from "framer-motion"
 
 import { WeatherIcon } from "@/components/atoms"
 
-import {
-  formatDayLong,
-  formatDayShort,
-  formatTemperature,
-} from "@/lib/unitConversion"
+import { formatDayShort, formatTemperature } from "@/lib/unitConversion"
 import type { WeatherApiResponse } from "@/lib/weatherApi"
 import { useWeatherStore } from "@/store/weatherStore"
 
@@ -49,8 +45,9 @@ const DailyForecast = ({ weather }: DailyForecastProps) => {
         className="grid grid-cols-3 gap-3 md:grid-cols-7"
         initial="hidden"
         animate="visible"
+        variants={containerVariants}
       >
-        {weather.daily.time.map((date: any, index: number) => (
+        {weather.daily.time.map((date, index: number) => (
           <motion.article
             key={`weather-${date}`}
             className="forecast-card"

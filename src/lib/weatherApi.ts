@@ -1,9 +1,7 @@
 import axios from "axios"
-import { fetchWeatherApi } from "openmeteo"
 
 // demonstration on how to use openmeteo api
 // - https://open-meteo.com/en/docs?latitude=3.1412&longitude=101.6865
-// https://www.npmjs.com/package/openmeteo - update the data format according to example
 export interface GeocodingLocationItem {
   id: number
   name: string
