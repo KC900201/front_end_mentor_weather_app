@@ -179,7 +179,7 @@ const UnitsDropdown = () => {
                 {precipitationUnit === "mm" && (
                   <img
                     src={iconCheckmark}
-                    alt="Selectd"
+                    alt="Selected"
                     className="h-3 w-3.5"
                   />
                 )}
@@ -194,7 +194,7 @@ const UnitsDropdown = () => {
                 {precipitationUnit === "inch" && (
                   <img
                     src={iconCheckmark}
-                    alt="Selectd"
+                    alt="Selected"
                     className="h-3 w-3.5"
                   />
                 )}

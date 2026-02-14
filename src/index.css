@@ -45,7 +45,7 @@
   --text-temperature: 5rem;
   --text-temperature--line-height: 1;
   --text-temperature-mobile: 4rem;
-  --text-temperature--line-height: 1;
+  --text-temperature--mobile-line-height: 1;
 }
 
 @keyframes accordion-down {

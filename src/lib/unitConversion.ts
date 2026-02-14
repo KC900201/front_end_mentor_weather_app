@@ -12,7 +12,7 @@ export function kmhToMph(kmh: number) {
 }
 
 export function formatWindSpeed(kmh: number, unit: 'kmh' | 'mph') {
-  return unit === 'kmh' ? `${kmhToMph(kmh)} mph` : `${Math.round(kmh)} km/h`
+  return unit === 'kmh' ?  `${Math.round(kmh)} km/h` : `${kmhToMph(kmh)} mph`
 }
 
 export function mmToInch(mm: number) {
