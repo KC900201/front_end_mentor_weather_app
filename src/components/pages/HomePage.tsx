@@ -82,21 +82,20 @@ const HomePage = () => {
           <section className="space-y-6" aria-label="Weather information">
             {/* Main grid: Current weather + hourly */}
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-              <div className="lg:col-span-2">
+              <div className="space-y-6 lg:col-span-2">
                 <CurrentWeatherCard weather={weather} />
+                {/* Metrics */}
+                <MetricsGrid
+                  feelsLike={weather.current.apparent_temperature}
+                  humidity={weather.current.relative_humidity_2m}
+                  windSpeed={weather.current.wind_speed_10m}
+                  precipitation={weather.current.precipitation}
+                />
               </div>
               <aside className="lg:col-span-1">
                 <HourlyForecast weather={weather} />
               </aside>
             </div>
-
-            {/* Metrics */}
-            <MetricsGrid
-              feelsLike={weather.current.apparent_temperature}
-              humidity={weather.current.relative_humidity_2m}
-              windSpeed={weather.current.wind_speed_10m}
-              precipitation={weather.current.precipitation}
-            />
 
             {/* Daily forecast */}
             <DailyForecast weather={weather} />

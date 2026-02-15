@@ -154,9 +154,8 @@ const HourlyForecast = ({ weather }: HourlyForecastProps) => {
         {hourlyData.map((item) => (
           <motion.li
             key={item.time}
-            className="hourly-item"
+            className="hourly-item hover:bg-muted/50"
             variants={itemVariants}
-            whileHover={{ backgroundColor: "hsl(var(--muted) / 0.5)" }}
           >
             <div className="flex items-center gap-3">
               <WeatherIcon code={item.weatherCode} size={32} />
